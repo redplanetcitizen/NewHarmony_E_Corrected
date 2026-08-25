@@ -1,0 +1,218 @@
+{
+  "milestone": "E",
+  "solver": "new_harmony_empirical_e_corrected",
+  "replacement_floor": 0.0,
+  "status": "ACCEPTED after corrected 18/18 tests and predecessor 25/25 replay",
+  "baseline": [
+    {
+      "technology_mode": "frozen",
+      "final_mean_harmony": 0.4196346594277191,
+      "final_cv_harmony": 0.0848061798974074,
+      "capital_transfers": 86,
+      "inventory_transfers": 0,
+      "planned_investment_5y_real_musd": 6349314.926552771,
+      "planned_over_observed_investment": 0.2687727901475962,
+      "stock_2023_over_observed": 0.7873808877672887
+    },
+    {
+      "technology_mode": "historical",
+      "final_mean_harmony": 0.4194880521717638,
+      "final_cv_harmony": 0.08643638209600185,
+      "capital_transfers": 74,
+      "inventory_transfers": 0,
+      "planned_investment_5y_real_musd": 6489951.347337123,
+      "planned_over_observed_investment": 0.2747260691466431,
+      "stock_2023_over_observed": 0.7885975383254547
+    }
+  ],
+  "investment_gap": [
+    {
+      "technology_mode": "frozen",
+      "planned_investment_5y_real_musd": 6349314.926552771,
+      "observed_investment_5y_real_musd": 23623354.592799567,
+      "planned_over_observed": 0.2687727901475962,
+      "investment_gap_real_musd": 17274039.666246794,
+      "observed_depreciation_5y_real_musd": 18510050.138765983,
+      "observed_depreciation_over_observed_investment": 0.7835487574828968,
+      "observed_depreciation_over_investment_gap": 1.0715530643902789,
+      "observed_investment_minus_depreciation_5y_real_musd": 5113304.454033584,
+      "planned_over_observed_net_accumulation_proxy": 1.2417244041754976,
+      "model_endogenous_depreciation_5y_real_musd": 16112151.131042656,
+      "initial_stock_real_musd": 64244565.838135004,
+      "model_2023_end_stock_real_musd": 54481729.63364511,
+      "observed_2023_stock_real_musd": 69193614.52642632,
+      "model_stock_change_2018_2023_real_musd": -9762836.204489894,
+      "observed_stock_change_2018_2023_real_musd": 4949048.688291311,
+      "model_2023_stock_over_observed": 0.7873808877672887,
+      "final_mean_harmony": 0.4196346594277191,
+      "final_cv_harmony": 0.0848061798974074,
+      "capital_transfers": 86
+    },
+    {
+      "technology_mode": "historical",
+      "planned_investment_5y_real_musd": 6489951.347337122,
+      "observed_investment_5y_real_musd": 23623354.592799567,
+      "planned_over_observed": 0.2747260691466431,
+      "investment_gap_real_musd": 17133403.245462444,
+      "observed_depreciation_5y_real_musd": 18510050.138765983,
+      "observed_depreciation_over_observed_investment": 0.7835487574828968,
+      "observed_depreciation_over_investment_gap": 1.0803487126043174,
+      "observed_investment_minus_depreciation_5y_real_musd": 5113304.454033584,
+      "planned_over_observed_net_accumulation_proxy": 1.2692284227702464,
+      "model_endogenous_depreciation_5y_real_musd": 16168603.1020919,
+      "initial_stock_real_musd": 64244565.838135004,
+      "model_2023_end_stock_real_musd": 54565914.083380215,
+      "observed_2023_stock_real_musd": 69193614.52642632,
+      "model_stock_change_2018_2023_real_musd": -9678651.75475479,
+      "observed_stock_change_2018_2023_real_musd": 4949048.688291311,
+      "model_2023_stock_over_observed": 0.7885975383254547,
+      "final_mean_harmony": 0.4194880521717638,
+      "final_cv_harmony": 0.08643638209600185,
+      "capital_transfers": 74
+    }
+  ],
+  "fixed_asset_composition": [
+    {
+      "flow": "depreciation",
+      "owner": "government",
+      "asset_type": "equipment",
+      "component_real_2019price_5y_musd": 724815.9608577164,
+      "component_share_of_component_total": 0.039147086574047904,
+      "current_cost_5y_musd": 765050.0
+    },
+    {
+      "flow": "depreciation",
+      "owner": "government",
+      "asset_type": "ipp",
+      "component_real_2019price_5y_musd": 1200833.665078462,
+      "component_share_of_component_total": 0.0648566560154514,
+      "current_cost_5y_musd": 1233413.0
+    },
+    {
+      "flow": "depreciation",
+      "owner": "government",
+      "asset_type": "structures",
+      "component_real_2019price_5y_musd": 1225515.8184496916,
+      "component_share_of_component_total": 0.06618973150914506,
+      "current_cost_5y_musd": 1373697.0
+    },
+    {
+      "flow": "depreciation",
+      "owner": "private",
+      "asset_type": "equipment",
+      "component_real_2019price_5y_musd": 5242904.12544946,
+      "component_share_of_component_total": 0.2831676353477721,
+      "current_cost_5y_musd": 5541752.0
+    },
+    {
+      "flow": "depreciation",
+      "owner": "private",
+      "asset_type": "ipp",
+      "component_real_2019price_5y_musd": 5057608.031167132,
+      "component_share_of_component_total": 0.27315985042521135,
+      "current_cost_5y_musd": 5169570.0
+    },
+    {
+      "flow": "depreciation",
+      "owner": "private",
+      "asset_type": "structures",
+      "component_real_2019price_5y_musd": 5063517.890920164,
+      "component_share_of_component_total": 0.2734790401283722,
+      "current_cost_5y_musd": 5764712.0
+    },
+    {
+      "flow": "investment",
+      "owner": "government",
+      "asset_type": "equipment",
+      "component_real_2019price_5y_musd": 822106.089933797,
+      "component_share_of_component_total": 0.03480783863821368,
+      "current_cost_5y_musd": 863569.0
+    },
+    {
+      "flow": "investment",
+      "owner": "government",
+      "asset_type": "ipp",
+      "component_real_2019price_5y_musd": 1430200.9805322997,
+      "component_share_of_component_total": 0.06055447777377754,
+      "current_cost_5y_musd": 1468605.0
+    },
+    {
+      "flow": "investment",
+      "owner": "government",
+      "asset_type": "structures",
+      "component_real_2019price_5y_musd": 1760047.9717214766,
+      "component_share_of_component_total": 0.07452014593412133,
+      "current_cost_5y_musd": 1964340.0
+    },
+    {
+      "flow": "investment",
+      "owner": "private",
+      "asset_type": "equipment",
+      "component_real_2019price_5y_musd": 5975955.341473541,
+      "component_share_of_component_total": 0.25302098084680635,
+      "current_cost_5y_musd": 6273224.0
+    },
+    {
+      "flow": "investment",
+      "owner": "private",
+      "asset_type": "ipp",
+      "component_real_2019price_5y_musd": 6271255.713800356,
+      "component_share_of_component_total": 0.2655239507622633,
+      "current_cost_5y_musd": 6422341.0
+    },
+    {
+      "flow": "investment",
+      "owner": "private",
+      "asset_type": "structures",
+      "component_real_2019price_5y_musd": 7358852.11225898,
+      "component_share_of_component_total": 0.31157260604481773,
+      "current_cost_5y_musd": 8475947.0
+    }
+  ],
+  "fixed_asset_component_reconciliation_max_abs_ratio": 0.0017645168741574134,
+  "terminal_horizon": [
+    {
+      "technology_mode": "frozen",
+      "diagnostic": "stationary_2024_shadow_year",
+      "shadow_year": 2024,
+      "shadow_assumption": "repeat 2023 target, technology, labour and import envelope; no claim of observed 2024",
+      "six_year_mean_harmony": 0.41338982002455277,
+      "six_year_cv_harmony": 0.0807623887808713,
+      "capital_transfers": 166,
+      "planned_investment_2019_2023_real_musd": 5300496.465573253,
+      "planned_over_observed_2019_2023": 0.22437526578840974,
+      "investment_2023_real_musd": 1001392.981166745,
+      "investment_shadow_2024_real_musd": 2487777.2101639714,
+      "shadow_2024_fulfillment": 0.6244433352664022,
+      "stock_2023_over_observed": 0.7707389829805429,
+      "all_transfer_gains_positive": true
+    },
+    {
+      "technology_mode": "historical",
+      "diagnostic": "stationary_2024_shadow_year",
+      "shadow_year": 2024,
+      "shadow_assumption": "repeat 2023 target, technology, labour and import envelope; no claim of observed 2024",
+      "six_year_mean_harmony": 0.40902404067865067,
+      "six_year_cv_harmony": 0.07144843209276808,
+      "capital_transfers": 171,
+      "planned_investment_2019_2023_real_musd": 5818135.589689009,
+      "planned_over_observed_2019_2023": 0.24628744265907032,
+      "investment_2023_real_musd": 1020992.8694956645,
+      "investment_shadow_2024_real_musd": 2553839.649018788,
+      "shadow_2024_fulfillment": 0.6304525492846146,
+      "stock_2023_over_observed": 0.7759547695827722,
+      "all_transfer_gains_positive": true
+    }
+  ],
+  "sensitivity_investment_ratio_range": {
+    "frozen": [
+      0.22058072800258405,
+      0.30077318691444643
+    ],
+    "historical": [
+      0.2384844240517427,
+      0.29526927701667655
+    ]
+  },
+  "interpretation": "The Milestone E investment rule remains a marginal capacity-relief rule with no general 70-percent replacement floor. Numerical conclusions must be read from the regenerated corrected outputs and acceptance tests."
+}

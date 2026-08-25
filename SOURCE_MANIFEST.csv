@@ -1,0 +1,5 @@
+path,role,sha256,bytes
+reference/NewHarmony_Milestone_D.zip,locked predecessor,ad8487f4e37b3d2cc1a89e4bd692f5424a19d4c586fea5345a4b78d1f29a9732,14441785
+sources/Use_Summary.xlsx,BEA Summary Use tables inherited from D,98dd61d7c2a8df7c9678b1ebff9015372ac5ed082df33f9b15e8d7bf9408f341,1161293
+sources/ImportMatrices_Before_Redefinitions_Summary.xlsx,BEA Summary Import Matrices inherited from D,37dc9a1cd9de575d71c50a24f17018d5b7ff84bdf6dc1c4a9c69badfddaf8d17,841865
+sources/BEA_FixedAssets_Milestone_B.zip,BEA Fixed Assets Section 3/7 source archive for M10 asset-composition diagnostics,09e71560dd27ac6aa9ea9d06b539ae2b1cadab45509e55b23d7171d0131df519,2580231

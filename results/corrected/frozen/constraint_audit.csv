@@ -1,0 +1,6 @@
+year,flow_balance_ok,labour_ok,capital_ok,imports_ok,consumption_ok,inventory_ok,max_flow_residual,labour_used,labour_available,max_capital_excess,max_import_excess,min_consumption,min_inventory,compliant
+2019,True,True,True,True,True,True,2.9103830456733704e-11,109470.54424358447,141249.0,0.0,0.0,-5.275069270282984e-11,0.0,True
+2020,True,True,True,True,True,True,0.0,98211.08094462307,133374.0,0.0,0.0,-4.18367562815547e-11,0.0,True
+2021,True,True,True,True,True,True,0.0,94747.96902507255,137561.0,0.0,0.0,-1.5825207810848951e-10,0.0,True
+2022,True,True,True,True,True,True,2.9103830456733704e-11,94351.81037448152,143395.0,0.0,0.0,-8.549250196665525e-11,0.0,True
+2023,True,True,True,True,True,True,0.0,88067.74378739319,146061.0,0.0,0.0,-2.000888343900442e-10,0.0,True

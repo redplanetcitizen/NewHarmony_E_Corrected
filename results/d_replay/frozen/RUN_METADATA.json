@@ -1,0 +1,15 @@
+{
+  "technology_mode": "frozen",
+  "imports_enabled": true,
+  "inventories_enabled": false,
+  "stop_reason_capital": "no_positive_transfer",
+  "stop_reason_inventory": "disabled",
+  "capital_transfers": 111,
+  "inventory_transfers": 0,
+  "initial_mean_harmony": 0.3559797463182118,
+  "final_mean_harmony": 0.4294140538902204,
+  "initial_cv": 0.259493615389566,
+  "final_cv": 0.0722136544998807,
+  "M08_import_cap": "componentwise model-consistent real envelope: A_import[t] @ observed domestic gross output[t]",
+  "M09_inventory_envelope": "absolute real domestic F030 movement by sector/year; conservative flow-throughput proxy, not stock capacity"
+}

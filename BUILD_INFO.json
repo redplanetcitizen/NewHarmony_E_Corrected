@@ -1,0 +1,25 @@
+{
+  "milestone": "E-corrected",
+  "status": "ACCEPTED",
+  "date": "2026-08-24",
+  "predecessor": "NewHarmony_Milestone_D.zip",
+  "predecessor_sha256": "ad8487f4e37b3d2cc1a89e4bd692f5424a19d4c586fea5345a4b78d1f29a9732",
+  "predecessor_tests": "25/25 PASS",
+  "acceptance_tests": "18/18 PASS",
+  "objective_years": [2019, 2020, 2021, 2022, 2023],
+  "n_sectors": 71,
+  "default_solver": "code/new_harmony_empirical_e_corrected.py",
+  "legacy_replay": "code/new_harmony_empirical_d.py",
+  "replacement_floor": 0.0,
+  "terminal_rule": "x=(I-A_T-D_T)^-1(q*g_T), q bounded by labour, capital, and imports",
+  "modifications": [
+    "Complete constraint audit",
+    "Weakest admissible year selection",
+    "Adaptive step search",
+    "Corrected terminal replacement",
+    "Product-level Harmony",
+    "No 70-percent preliminary replacement floor"
+  ],
+  "headline_result": "Corrected planner investment is 26.877% of observed investment in Frozen mode and 27.473% in Historical mode; all accepted scenarios pass explicit constraints.",
+  "final_status": "corrected empirical engine accepted; legacy replay preserved"
+}
