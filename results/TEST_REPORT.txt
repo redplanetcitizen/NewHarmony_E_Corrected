@@ -1,4 +1,28 @@
+MILESTONE E CORRECTED - ACCEPTANCE TEST REPORT
+Generated: 2026-08-24
+
+Corrected acceptance suite
+Command: python -B -W ignore::ResourceWarning -m unittest discover -s tests -p test_*.py -q
+
+Terminal diagnostic (Frozen): 2023 imports-limited, q=0.624443335; labour permits q=1.03564386
+Terminal diagnostic (Historical): 2023 imports-limited, q=0.630452549; labour permits q=1.03155158
+
 ----------------------------------------------------------------------
-Ran 24 tests in 21.799s
+Ran 18 tests in 38.217s
 
 OK
+
+The corrected suite includes an exact replay gate for the locked Milestone D
+archive. The predecessor suite was also rerun independently for this report:
+
+----------------------------------------------------------------------
+Ran 25 tests in 41.685s
+
+OK
+
+Acceptance result: PASS
+Corrected suite: 18/18 PASS
+Locked predecessor replay: 25/25 PASS
+Empirical contract: 5 years x 71 sectors
+General depreciation-replacement floor: 0%
+All corrected baseline constraint reports: compliant
