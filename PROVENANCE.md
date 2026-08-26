@@ -19,8 +19,42 @@ Milestone E uses observed investment and depreciation strictly for ex-post accou
 
 The stationary 2024 shadow year is explicitly synthetic: it repeats 2023 target, technology, labour availability and import envelope only to test and correct the terminal boundary in prospective use. It is not represented as observed 2024 data.
 
-## Corrected-solver lineage
+## Reconciled csvplan lineage
 
-The corrected package was derived from the accepted Milestone E without changing any BEA source, transformed empirical input, sector mapping, or locked predecessor archive. The historical modules `new_harmony_empirical_c.py` and `new_harmony_empirical_d.py` are retained for replay. New corrected behavior is isolated in `new_harmony_empirical_e_corrected.py` and selected by default through `new_harmony_empirical_e.py`.
+The source/code audit in `redplanetcitizen/csvplan-corrected` separates three objects that must remain distinct:
 
-The corrected solver does not use observed investment to determine the plan and does not import the 70% preliminary depreciation-replacement floor from `csvplan.jl`. The only mandatory replacement calculation is the explicit terminal boundary equation; all 0/10/20/30% maintenance floors remain diagnostics.
+1. Cockshott's historical `csvplan.jl` matrix prototype;
+2. the exact historical replay `legacy.py`;
+3. the source-reconciled reference `reconciled.py`.
+
+Milestone E aligns to the third object only for the source-supported accounting and dynamic core. The reference implementation checkpoint used for this alignment is `ded576c5b8c80d2bbc9fbf3a8a7a391f0a64a433`. The pre-alignment Milestone E baseline is `3faf1657bf0df93906477ed3ba85766406f323ba`.
+
+The inherited reconciled core is:
+
+- vector accounting of final output and investment;
+- robust annual Harmony over all positive-target products;
+- post-candidate feasibility checks;
+- exact stock recurrence;
+- exact source-to-destination depreciation;
+- lowest-Harmony destination tried first;
+- earlier-source search with strictly positive total-Harmony gain.
+
+The historical `csvplan.jl` preliminary 70% replacement schedule is **not** imported. The audit establishes that 70% is a code-only structural warm start/boundary condition, not a theoretical New Harmony constant. Milestone E's zero non-terminal initialization is therefore retained as a **Milestone E initialization choice**, not described as a correction of a theoretically erroneous 70% rule.
+
+## Milestone E extensions beyond the reconciled core
+
+The following behavior belongs to Milestone E and must not be attributed to Cockshott's printed algorithm:
+
+- ranked fallback to a later destination if the current lowest-Harmony year is uncorrectable;
+- actual cell-capacity-gap update `max(C*x_desired-S,0)` rather than the historical matrix C26 stock-proportional specialization;
+- adaptive step backtracking and growth/shrinkage;
+- the terminal equation `(I-A_T-D_T)^-1(qg_T)`;
+- componentwise empirical import envelopes;
+- forward-only inventory transfers;
+- the synthetic 2024 diagnostic continuation.
+
+The detailed rule-by-rule mapping is in `CSVPLAN_RECONCILED_ALIGNMENT.md`. Machine-readable labels are defined in `code/csvplan_reconciled_alignment.py`.
+
+## Replay separation
+
+The historical modules `new_harmony_empirical_c.py` and `new_harmony_empirical_d.py` remain available for replay. New aligned provenance does not rewrite their numerical behavior or the locked Milestone D archive.
